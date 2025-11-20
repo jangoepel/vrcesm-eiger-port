@@ -179,7 +179,7 @@
 
 ## Team & Resources
 
-**Lead:** Jan Göpel (Wyss Academy for Nature)  
+**Lead:** Marie-Estelle Demory (Wyss Academy for Nature)  
 **Institution:** University of Bern  
 **HPC Facility:** CSCS Eiger.Alps  
 **Allocation:** [Project allocation details]
