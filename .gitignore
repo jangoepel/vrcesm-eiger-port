@@ -1,0 +1,45 @@
+# CESM Build Artifacts
+bld/
+*.o
+*.mod
+*.a
+*.so
+
+# Case-specific
+run/
+archive/
+timing/
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+*.ipynb_checkpoints/
+
+# Data files
+*.nc
+*.nc4
+*.h0.*
+*.h1.*
+*.r.*
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Keep results directory structure but not large files
+benchmarks/results/*.txt.gz
+benchmarks/results/*.tar.gz

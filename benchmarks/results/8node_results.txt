@@ -1,0 +1,695 @@
+[eiger][jgpel@eiger-ln002 run]$ zcat cesm.log.5721452.251002-123349.gz
+ (t_initf) Read in prof_inparm namelist from: drv_in
+ (t_initf) Using profile_disable=          F
+ (t_initf)       profile_timer=                      4
+ (t_initf)       profile_depth_limit=                4
+ (t_initf)       profile_detail_limit=               2
+ (t_initf)       profile_barrier=          F
+ (t_initf)       profile_outpe_num=                  1
+ (t_initf)       profile_outpe_stride=               0
+ (t_initf)       profile_single_file=      F
+ (t_initf)       profile_global_stats=     T
+ (t_initf)       profile_ovhd_measurement= F
+ (t_initf)       profile_add_detail=       F
+ (t_initf)       profile_papi_enable=      F
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.671218E-02
+(shr_orb_params) Obliquity (deg)   =   2.344250E+01
+(shr_orb_params) Obliquity (rad)   =   4.091488E-01
+(shr_orb_params) Long of perh(deg) =   1.025358E+02
+(shr_orb_params) Long of perh(rad) =   4.931179E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.253756E-02
+(shr_orb_params) -----------------------------------------
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/inic/fv/cami-mam3_
+ 0000-01-01_0.9x1.25_L32_c141031.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/topo/fv_0.9x1.25_n
+ c3000_Nsw042_Nrs008_Co060_Fi001_ZR_sgh30_24km_GRNL_c170103.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/ozone_strataero/oz
+ one_strataero_WACCM_L70_zm5day_18500101-20150103_CMIP6ensAvg_c180923.nc
+           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/waccm/lb/LBC_1750-2015
+ _CMIP6_GlobAnnAvg_c180926.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/solar/SolarForcing
+ CMIP6_18491230-23000102_c20200615.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/solar/SolarForcing
+ CMIP6_18491230-23000102_c20200615.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/mam4_mod
+ e1_rrtmg_aeronetdust_sig1.6_dgnh.48_c140304.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/mam4_mod
+ e2_rrtmg_aitkendust_c141106.nc         134
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/mam4_mod
+ e3_rrtmg_aeronetdust_sig1.2_dgnl.40_c150219.nc         135
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/mam4_mod
+ e4_rrtmg_c130628.nc         136
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/volc_cam
+ RRTMG_byradius_sigma1.6_mode1_c210211.nc         137
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/volc_cam
+ RRTMG_byradius_sigma1.6_mode2_c210211.nc         138
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/volc_cam
+ RRTMG_byradius_sigma1.2_mode3_c210211.nc         139
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/sulfate_
+ rrtmg_c080918.nc         140
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/ocpho_rr
+ tmg_c130709.nc         141
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/ocphi_rr
+ tmg_c100508.nc         142
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/bcpho_rr
+ tmg_c100508.nc         143
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/dust_aer
+ onet_rrtmg_c141106.nc         144
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/ssam_rrt
+ mg_c100508.nc         145
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/physprops/water_re
+ findex_rrtmg_c080910.nc           0
+
+l, cnst_name(l), cnst_name_cw(l)
+   1  Q
+   2  CLDLIQ
+   3  CLDICE
+   4  NUMLIQ
+   5  NUMICE
+   6  RAINQM
+   7  SNOWQM
+   8  NUMRAI
+   9  NUMSNO
+  10  bc_a1             bc_c1
+  11  bc_a4             bc_c4
+  12  DMS
+  13  dst_a1            dst_c1
+  14  dst_a2            dst_c2
+  15  dst_a3            dst_c3
+  16  H2O2
+  17  H2SO4
+  18  ncl_a1            ncl_c1
+  19  ncl_a2            ncl_c2
+  20  ncl_a3            ncl_c3
+  21  num_a1            num_c1
+  22  num_a2            num_c2
+  23  num_a3            num_c3
+  24  num_a4            num_c4
+  25  pom_a1            pom_c1
+  26  pom_a4            pom_c4
+  27  SO2
+  28  so4_a1            so4_c1
+  29  so4_a2            so4_c2
+  30  so4_a3            so4_c3
+  31  soa_a1            soa_c1
+  32  soa_a2            soa_c2
+  33  SOAE
+  34  SOAG
+calcsize addfld - num_a1_sfcsiz1
+calcsize addfld - num_a1_sfcsiz2
+calcsize addfld - num_c1_sfcsiz1
+calcsize addfld - num_c1_sfcsiz2
+calcsize addfld - num_a2_sfcsiz1
+calcsize addfld - num_a2_sfcsiz2
+calcsize addfld - num_c2_sfcsiz1
+calcsize addfld - num_c2_sfcsiz2
+calcsize addfld - num_a3_sfcsiz1
+calcsize addfld - num_a3_sfcsiz2
+calcsize addfld - num_c3_sfcsiz1
+calcsize addfld - num_c3_sfcsiz2
+calcsize addfld - num_a4_sfcsiz1
+calcsize addfld - num_a4_sfcsiz2
+calcsize addfld - num_c4_sfcsiz1
+calcsize addfld - num_c4_sfcsiz2
+calcsize addfld - num_a2_sfcsiz3
+calcsize addfld - num_a1_sfcsiz3
+calcsize addfld - num_a2_sfcsiz4
+calcsize addfld - num_a1_sfcsiz4
+calcsize addfld - num_c2_sfcsiz3
+calcsize addfld - num_c1_sfcsiz3
+calcsize addfld - num_c2_sfcsiz4
+calcsize addfld - num_c1_sfcsiz4
+calcsize addfld - so4_a2_sfcsiz3
+calcsize addfld - so4_a1_sfcsiz3
+calcsize addfld - so4_a2_sfcsiz4
+calcsize addfld - so4_a1_sfcsiz4
+calcsize addfld - so4_c2_sfcsiz3
+calcsize addfld - so4_c1_sfcsiz3
+calcsize addfld - so4_c2_sfcsiz4
+calcsize addfld - so4_c1_sfcsiz4
+calcsize addfld - soa_a2_sfcsiz3
+calcsize addfld - soa_a1_sfcsiz3
+calcsize addfld - soa_a2_sfcsiz4
+calcsize addfld - soa_a1_sfcsiz4
+calcsize addfld - soa_c2_sfcsiz3
+calcsize addfld - soa_c1_sfcsiz3
+calcsize addfld - soa_c2_sfcsiz4
+calcsize addfld - soa_c1_sfcsiz4
+calcsize addfld - ncl_a2_sfcsiz3
+calcsize addfld - ncl_a1_sfcsiz3
+calcsize addfld - ncl_a2_sfcsiz4
+calcsize addfld - ncl_a1_sfcsiz4
+calcsize addfld - ncl_c2_sfcsiz3
+calcsize addfld - ncl_c1_sfcsiz3
+calcsize addfld - ncl_c2_sfcsiz4
+calcsize addfld - ncl_c1_sfcsiz4
+calcsize addfld - dst_a2_sfcsiz3
+calcsize addfld - dst_a1_sfcsiz3
+calcsize addfld - dst_a2_sfcsiz4
+calcsize addfld - dst_a1_sfcsiz4
+calcsize addfld - dst_c2_sfcsiz3
+calcsize addfld - dst_c1_sfcsiz3
+calcsize addfld - dst_c2_sfcsiz4
+calcsize addfld - dst_c1_sfcsiz4
+
+subr. modal_aero_gasaerexch_init - primary carbon aging pointers
+pair  1     mode  4 ---> mode  1
+     spec 24=num_a4           ---> spec 21=num_a1
+     spec 26=pom_a4           ---> spec 25=pom_a1
+     spec 11=bc_a4            ---> spec 10=bc_a1
+
+qconff addfld   qconff_gaex                           kg/kg/s
+qevapff addfld   qevapff_gaex                          kg/kg/s
+qconbb addfld   qconbb_gaex                           kg/kg/s
+qevapbb addfld   qevapbb_gaex                          kg/kg/s
+qconbg addfld   qconbg_gaex                           kg/kg/s
+qevapbg addfld   qevapbg_gaex                          kg/kg/s
+qcon addfld   qcon_gaex                             kg/kg/s
+qevap addfld   qevap_gaex                            kg/kg/s
+gasaerexch addfld   bc_a1_sfgaex1                         kg/m2/s
+gasaerexch addfld   bc_a4_sfgaex1                         kg/m2/s
+gasaerexch addfld   H2SO4_sfgaex1                         kg/m2/s
+gasaerexch addfld   num_a1_sfgaex1                        kg/m2/s
+gasaerexch addfld   num_a4_sfgaex1                        kg/m2/s
+gasaerexch addfld   pom_a1_sfgaex1                        kg/m2/s
+gasaerexch addfld   pom_a4_sfgaex1                        kg/m2/s
+gasaerexch addfld   so4_a1_sfgaex1                        kg/m2/s
+gasaerexch addfld   so4_a2_sfgaex1                        kg/m2/s
+gasaerexch addfld   so4_a3_sfgaex1                        kg/m2/s
+gasaerexch addfld   soa_a1_sfgaex1                        kg/m2/s
+gasaerexch addfld   soa_a2_sfgaex1                        kg/m2/s
+gasaerexch addfld   SOAG_sfgaex1                          kg/m2/s
+gasaerexch addfld   dst_a1_sfgaex2                        kg/m2/s
+gasaerexch addfld   dst_c1_sfgaex2                        kg/m2/s
+gasaerexch addfld   dst_a2_sfgaex2                        kg/m2/s
+gasaerexch addfld   dst_c2_sfgaex2                        kg/m2/s
+gasaerexch addfld   dst_a3_sfgaex2                        kg/m2/s
+gasaerexch addfld   dst_c3_sfgaex2                        kg/m2/s
+gasaerexch addfld   ncl_a1_sfgaex2                        kg/m2/s
+gasaerexch addfld   ncl_c1_sfgaex2                        kg/m2/s
+gasaerexch addfld   ncl_a2_sfgaex2                        kg/m2/s
+gasaerexch addfld   ncl_c2_sfgaex2                        kg/m2/s
+gasaerexch addfld   ncl_a3_sfgaex2                        kg/m2/s
+gasaerexch addfld   ncl_c3_sfgaex2                        kg/m2/s
+gasaerexch addfld   num_a1_sfgaex2                        #/m2/s
+gasaerexch addfld   num_c1_sfgaex2                        #/m2/s
+gasaerexch addfld   num_a2_sfgaex2                        #/m2/s
+gasaerexch addfld   num_c2_sfgaex2                        #/m2/s
+gasaerexch addfld   num_a3_sfgaex2                        #/m2/s
+gasaerexch addfld   num_c3_sfgaex2                        #/m2/s
+gasaerexch addfld   so4_a1_sfgaex2                        kg/m2/s
+gasaerexch addfld   so4_c1_sfgaex2                        kg/m2/s
+gasaerexch addfld   so4_a2_sfgaex2                        kg/m2/s
+gasaerexch addfld   so4_c2_sfgaex2                        kg/m2/s
+gasaerexch addfld   so4_a3_sfgaex2                        kg/m2/s
+gasaerexch addfld   so4_c3_sfgaex2                        kg/m2/s
+gasaerexch addfld   soa_a1_sfgaex2                        kg/m2/s
+gasaerexch addfld   soa_c1_sfgaex2                        kg/m2/s
+gasaerexch addfld   soa_a2_sfgaex2                        kg/m2/s
+gasaerexch addfld   soa_c2_sfgaex2                        kg/m2/s
+
+subr. modal_aero_coag_init
+pair  1     mode  2 ---> mode  1   eff  1
+     spec 29=so4_a2           ---> spec 28=so4_a1
+     spec 32=soa_a2           ---> spec 31=soa_a1
+     spec 19=ncl_a2           ---> spec 18=ncl_a1
+     spec 14=dst_a2           ---> spec 13=dst_a1
+pair  2     mode  4 ---> mode  1   eff  1
+     spec 26=pom_a4           ---> spec 25=pom_a1
+     spec 11=bc_a4            ---> spec 10=bc_a1
+pair  3     mode  2 ---> mode  4   eff  1
+     spec 29=so4_a2           ---> spec 28=so4_a1
+     spec 32=soa_a2           ---> spec 31=soa_a1
+     spec 19=ncl_a2           ---> spec 18=ncl_a1
+     spec 14=dst_a2           ---> spec 13=dst_a1
+
+modal_aero_coag_init addfld  bc_a1_sfcoag1                        kg/m2/s
+modal_aero_coag_init addfld  bc_a4_sfcoag1                        kg/m2/s
+modal_aero_coag_init addfld  dst_a1_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  dst_a2_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  ncl_a1_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  ncl_a2_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  num_a1_sfcoag1                       #/m2/s
+modal_aero_coag_init addfld  num_a2_sfcoag1                       #/m2/s
+modal_aero_coag_init addfld  num_a4_sfcoag1                       #/m2/s
+modal_aero_coag_init addfld  pom_a1_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  pom_a4_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  so4_a1_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  so4_a2_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  soa_a1_sfcoag1                       kg/m2/s
+modal_aero_coag_init addfld  soa_a2_sfcoag1                       kg/m2/s
+modal_aero_newnuc_init addfld  H2SO4_sfnnuc1                        kg/m2/s
+modal_aero_newnuc_init addfld  num_a2_sfnnuc1                       #/m2/s
+modal_aero_newnuc_init addfld  so4_a2_sfnnuc1                       kg/m2/s
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/dst/dst_source2x2t
+ unedcam6-2x2-04062017.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/tracer_cnst/tracer
+ _cnst_halons_3D_L70_1849-2015_CMIP6ensAvg_c180927.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_BENZENE_anthro_surface_1750-2015_0.9x1.25_c20
+ 170608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_BENZENE_anthro_surface_1750-2015_0.9x1.25_c20
+ 170608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_BENZENE_bb_surface_1750-2015_0.9x1.25_c201703
+ 22.nc         150
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_BENZENE_bb_surface_1750-2015_0.9x1.25_c201703
+ 22.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_DMS_bb_surface_1750-2015_0.9x1.25_c20170322.n
+ c         152
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_DMS_bb_surface_1750-2015_0.9x1.25_c20170322.n
+ c           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_ISOP_bb_surface_1750-2015_0.9x1.25_c20170322.
+ nc         154
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_ISOP_bb_surface_1750-2015_0.9x1.25_c20170322.
+ nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_IVOC_anthro_surface_1750-2015_0.9x1.25_c20170
+ 608.nc         156
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_IVOC_anthro_surface_1750-2015_0.9x1.25_c20170
+ 608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_IVOC_bb_surface_1750-2015_0.9x1.25_c20170322.
+ nc         158
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_IVOC_bb_surface_1750-2015_0.9x1.25_c20170322.
+ nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_MTERP_bb_surface_1750-2015_0.9x1.25_c20170322
+ .nc         160
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_MTERP_bb_surface_1750-2015_0.9x1.25_c20170322
+ .nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_anthro-ag-ship-res_surface_1750-2015_0.9x
+ 1.25_c20170616.nc         162
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_anthro-ag-ship-res_surface_1750-2015_0.9x
+ 1.25_c20170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_anthro-ene_surface_1750-2015_0.9x1.25_c20
+ 170616.nc         164
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_anthro-ene_surface_1750-2015_0.9x1.25_c20
+ 170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_bb_surface_1750-2015_0.9x1.25_c20170322.n
+ c         166
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_bb_surface_1750-2015_0.9x1.25_c20170322.n
+ c           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SVOC_anthro_surface_1750-2015_0.9x1.25_c20170
+ 608.nc         168
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SVOC_anthro_surface_1750-2015_0.9x1.25_c20170
+ 608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SVOC_bb_surface_1750-2015_0.9x1.25_c20170322.
+ nc         170
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SVOC_bb_surface_1750-2015_0.9x1.25_c20170322.
+ nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_TOLUENE_anthro_surface_1750-2015_0.9x1.25_c20
+ 170608.nc         172
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_TOLUENE_anthro_surface_1750-2015_0.9x1.25_c20
+ 170608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_TOLUENE_bb_surface_1750-2015_0.9x1.25_c201703
+ 22.nc         174
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_TOLUENE_bb_surface_1750-2015_0.9x1.25_c201703
+ 22.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_XYLENES_anthro_surface_1750-2015_0.9x1.25_c20
+ 170608.nc         176
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_XYLENES_anthro_surface_1750-2015_0.9x1.25_c20
+ 170608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_XYLENES_bb_surface_1750-2015_0.9x1.25_c201703
+ 22.nc         178
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_XYLENES_bb_surface_1750-2015_0.9x1.25_c201703
+ 22.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_bc_a4_anthro_surface_1750-2015_0.9x1.25_c2017
+ 0608.nc         180
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_bc_a4_anthro_surface_1750-2015_0.9x1.25_c2017
+ 0608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_bc_a4_bb_surface_1750-2015_0.9x1.25_c20170322
+ .nc         182
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_bc_a4_bb_surface_1750-2015_0.9x1.25_c20170322
+ .nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_bc_a4_anthro_surface_1750-2015_0.9x1.25_c
+ 20170608.nc         184
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_bc_a4_anthro_surface_1750-2015_0.9x1.25_c
+ 20170608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_bc_a4_bb_surface_1750-2015_0.9x1.25_c2017
+ 0322.nc         186
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_bc_a4_bb_surface_1750-2015_0.9x1.25_c2017
+ 0322.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_pom_a4_anthro_surface_1750-2015_0.9x1.25_
+ c20170608.nc         188
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_pom_a4_anthro_surface_1750-2015_0.9x1.25_
+ c20170608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_pom_a4_bb_surface_1750-2015_0.9x1.25_c201
+ 70509.nc         190
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_pom_a4_bb_surface_1750-2015_0.9x1.25_c201
+ 70509.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a1_anthro-ag-ship_surface_1750-2015_0
+ .9x1.25_c20170616.nc         192
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a1_anthro-ag-ship_surface_1750-2015_0
+ .9x1.25_c20170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a1_bb_surface_1750-2015_0.9x1.25_c201
+ 70322.nc         194
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a1_bb_surface_1750-2015_0.9x1.25_c201
+ 70322.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a2_anthro-res_surface_1750-2015_0.9x1
+ .25_c20170616.nc         196
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a2_anthro-res_surface_1750-2015_0.9x1
+ .25_c20170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_pom_a4_anthro_surface_1750-2015_0.9x1.25_c201
+ 70608.nc         198
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_pom_a4_anthro_surface_1750-2015_0.9x1.25_c201
+ 70608.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_pom_a4_bb_surface_1750-2015_0.9x1.25_c2017032
+ 2.nc         200
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_pom_a4_bb_surface_1750-2015_0.9x1.25_c2017032
+ 2.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_anthro-ag-ship_surface_1750-2015_0.9x1
+ .25_c20170616.nc         202
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_anthro-ag-ship_surface_1750-2015_0.9x1
+ .25_c20170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_bb_surface_1750-2015_0.9x1.25_c2017032
+ 2.nc         204
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_bb_surface_1750-2015_0.9x1.25_c2017032
+ 2.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a2_anthro-res_surface_1750-2015_0.9x1.25_
+ c20170616.nc         206
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a2_anthro-res_surface_1750-2015_0.9x1.25_
+ c20170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_contvolcano_vertical_850-5000_0.9x1.25_c2
+ 0170724.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_SO2_contvolcano_vertical_850-5000_0.9x1.25_c2
+ 0170724.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_a1_so4_contvolcano_vertical_850-5000_0.9x
+ 1.25_c20170724.nc         210
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_a1_so4_contvolcano_vertical_850-5000_0.9x
+ 1.25_c20170724.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_a2_so4_contvolcano_vertical_850-5000_0.9x
+ 1.25_c20170724.nc         212
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_a2_so4_contvolcano_vertical_850-5000_0.9x
+ 1.25_c20170724.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a1_anthro-ene_vertical_1750-2015_0.9x
+ 1.25_c20170616.nc         214
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_num_so4_a1_anthro-ene_vertical_1750-2015_0.9x
+ 1.25_c20170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_anthro-ene_vertical_1750-2015_0.9x1.25
+ _c20170616.nc         216
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_anthro-ene_vertical_1750-2015_0.9x1.25
+ _c20170616.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_contvolcano_vertical_850-5000_0.9x1.25
+ _c20170724.nc         218
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a1_contvolcano_vertical_850-5000_0.9x1.25
+ _c20170724.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a2_contvolcano_vertical_850-5000_0.9x1.25
+ _c20170724.nc         220
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/CMIP6_em
+ issions_1750_2015/emissions-cmip6_so4_a2_contvolcano_vertical_850-5000_0.9x1.25
+ _c20170724.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/elev/H2O
+ emissionCH4oxidationx2_3D_L70_1849-2015_CMIP6ensAvg_c180927.nc         222
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/emis/elev/H2O
+ emissionCH4oxidationx2_3D_L70_1849-2015_CMIP6ensAvg_c180927.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/trop_mozart/d
+ vel/regrid_vegetation.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/trop_mozart/p
+ hot/exo_coldens.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/ocnexch/SSS_c
+ limatology_f09f09_c20230110.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/ocnexch/Csw_D
+ MS_Lana2011_f09f09_1750_2100_20200717a.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/ocnexch/Csw_D
+ MS_Lana2011_f09f09_1750_2100_20200717a.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/ozone_strataero/oz
+ one_strataero_WACCM_L70_zm5day_18500101-20150103_CMIP6ensAvg_c180923.nc
+           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/ozone_strataero/oz
+ one_strataero_WACCM_L70_zm5day_18500101-20150103_CMIP6ensAvg_c180923.nc
+           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/atm/cam/chem/trop_mozart/u
+ b/clim_p_trop.nc           0
+ Opening existing file
+ /capstor/scratch/cscs/jgpel/cesm3_0_beta06/inputdata/lnd/clm2/ndepdata/fndep_cl
+ m_hist_b.e21.BWHIST.f09_g17.CMIP6-historical-WACCM.ensmean_1849-2015_monthly_0.
+ 9x1.25_c180926.nc           0
+calcsize j,iq,jac, lsfrm,lstoo  1  1  1  22  21
+calcsize j,iq,jac, lsfrm,lstoo  1  1  2  22  21
+calcsize j,iq,jac, lsfrm,lstoo  1  2  1  29  28
+calcsize j,iq,jac, lsfrm,lstoo  1  2  2  29  28
+calcsize j,iq,jac, lsfrm,lstoo  1  3  1  32  31
+calcsize j,iq,jac, lsfrm,lstoo  1  3  2  32  31
+calcsize j,iq,jac, lsfrm,lstoo  1  4  1  19  18
+calcsize j,iq,jac, lsfrm,lstoo  1  4  2  19  18
+calcsize j,iq,jac, lsfrm,lstoo  1  5  1  14  13
+calcsize j,iq,jac, lsfrm,lstoo  1  5  2  14  13
+calcsize j,iq,jac, lsfrm,lstoo  2  1  1  21  22
+calcsize j,iq,jac, lsfrm,lstoo  2  1  2  21  22
+calcsize j,iq,jac, lsfrm,lstoo  2  2  1  28  29
+calcsize j,iq,jac, lsfrm,lstoo  2  2  2  28  29
+calcsize j,iq,jac, lsfrm,lstoo  2  3  1  31  32
+calcsize j,iq,jac, lsfrm,lstoo  2  3  2  31  32
+calcsize j,iq,jac, lsfrm,lstoo  2  4  1  18  19
+calcsize j,iq,jac, lsfrm,lstoo  2  4  2  18  19
+calcsize j,iq,jac, lsfrm,lstoo  2  5  1  13  14
+calcsize j,iq,jac, lsfrm,lstoo  2  5  2  13  14
+ Opened file clm_FHIST_8node.cam.h0i.1979-01-02-00000.nc to write         240
+ Opened file clm_FHIST_8node.cam.h0a.1979-01-02-00000.nc to write         241
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+ Warning: incorrect ice nucleation number (nuci reset =0)
+   18867.9858898515        208.096079196612       0.572038574464302
+  2.056246744051697E-002  0.000000000000000E+000  7.265262535495161E-004
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  7.265262535495161E-004   170.884107939612
+  max rss=0.0 MB
+  max rss=0.0 MB
+ Opened file clm_FHIST_8node.cam.h0i.1979-01-07-00000.nc to write         242
+ Opened file clm_FHIST_8node.cam.h0a.1979-01-07-00000.nc to write         243
+  max rss=0.0 MB
+ Warning: incorrect ice nucleation number (nuci reset =0)
+   27855.2826772595        207.494202850573       0.830928234774057
+  2.197161885812559E-002  0.000000000000000E+000  6.132863346955979E-004
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  6.132863346955979E-004   1179.85377331632
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+ Opened file clm_FHIST_8node.cam.h0i.1979-01-12-00000.nc to write         244
+ Opened file clm_FHIST_8node.cam.h0a.1979-01-12-00000.nc to write         245
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+ Opened file clm_FHIST_8node.cam.h0i.1979-01-17-00000.nc to write         246
+ Opened file clm_FHIST_8node.cam.h0a.1979-01-17-00000.nc to write         247
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+ Opened file clm_FHIST_8node.cam.h0i.1979-01-22-00000.nc to write         248
+ Opened file clm_FHIST_8node.cam.h0a.1979-01-22-00000.nc to write         249
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+ Warning: incorrect ice nucleation number (nuci reset =0)
+   12241.9280593271        235.043947704587       0.976235179953520
+  2.000000000000000E-002  0.000000000000000E+000  3.328294800532680E-007
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  3.328294800532680E-007   4.19740797690085
+ Warning: incorrect ice nucleation number (nuci reset =0)
+   13611.1627590489        235.175887797257       0.975732434429753
+  2.000000000000000E-002  0.000000000000000E+000  2.891515590927387E-007
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  2.891515590927387E-007   4.33917017279303
+ Warning: incorrect ice nucleation number (nuci reset =0)
+   28266.7442393061        235.082481278420        1.02376134489549
+  2.000000000000000E-002  0.000000000000000E+000  4.285457610224396E-007
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  4.285457610224396E-007  0.211254060185476
+ Opened file clm_FHIST_8node.cam.h0i.1979-01-27-00000.nc to write         250
+ Opened file clm_FHIST_8node.cam.h0a.1979-01-27-00000.nc to write         251
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+  max rss=0.0 MB
+ Opened file clm_FHIST_8node.cam.r.1979-01-31-00000.nc to write         252
+ Opened file clm_FHIST_8node.cam.rs.1979-01-31-00000.nc to write         253
+  max rss=0.0 MB
+med_finalize max rss=0.0 MB
+
+MPICH Slingshot Network Summary: 3 network timeouts
