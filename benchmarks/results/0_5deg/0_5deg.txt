@@ -1,0 +1,585 @@
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6139878.251212-164657
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Fri Dec 12 19:23:04 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        128         0        128    x 1       1      (1     )
+  atm = cam        1920        0        1920   x 1       1      (1     )
+  lnd = clm        448         0        448    x 1       1      (1     )
+  ice = cice       192         1920     192    x 1       1      (1     )
+  ocn = docn       64          2112     64     x 1       1      (1     )
+  rof = mosart     96          0        96     x 1       1      (1     )
+  glc = sglc       32          2176     32     x 1       1      (1     )
+  wav = swav       16          2208     16     x 1       1      (1     )
+  esp = sesp       8           2224     8      x 1       1      (1     )
+
+  total pes active           : 2232
+  mpi tasks per node         : 128
+  pe count for cost estimate : 2304
+
+  Overall Metrics:
+    Model Cost:           69448.15   pe-hrs/simulated_year
+    Model Throughput:         0.80   simulated_years/day
+
+    Init Time   :     433.800 seconds
+    Run Time    :    8918.854 seconds      297.295 seconds/day
+    Final Time  :      40.821 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    8918.854 seconds      297.295 seconds/mday         0.80 myears/wday
+    CPL Run Time:     227.779 seconds        7.593 seconds/mday        31.18 myears/wday
+    ATM Run Time:    8254.045 seconds      275.135 seconds/mday         0.86 myears/wday
+    LND Run Time:     499.909 seconds       16.664 seconds/mday        14.21 myears/wday
+    ICE Run Time:     136.363 seconds        4.545 seconds/mday        52.08 myears/wday
+    OCN Run Time:       1.528 seconds        0.051 seconds/mday      4646.28 myears/wday
+    ROF Run Time:       4.711 seconds        0.157 seconds/mday      1507.43 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   8904.137 seconds      296.805 seconds/mday         0.80 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 127)
+                                                ATM (pes 0 to 1919)
+                                                LND (pes 0 to 447)
+                                                                                  ICE (pes 1920 to 2111)
+                                                                                     OCN (pes 2112 to 2175)
+                                                ROF (pes 0 to 95)
+                                                                                       GLC (pes 2176 to 2207)
+                                                                                       WAV (pes 2208 to 2223)
+                                                                                       ESP (pes 2224 to 2231)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6141796.251212-235942
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sat Dec 13 01:57:51 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        128         0        128    x 1       1      (1     )
+  atm = cam        2560        0        2560   x 1       1      (1     )
+  lnd = clm        576         0        576    x 1       1      (1     )
+  ice = cice       256         2560     256    x 1       1      (1     )
+  ocn = docn       96          2816     96     x 1       1      (1     )
+  rof = mosart     128         0        128    x 1       1      (1     )
+  glc = sglc       48          2912     48     x 1       1      (1     )
+  wav = swav       24          2960     24     x 1       1      (1     )
+  esp = sesp       8           2984     8      x 1       1      (1     )
+
+  total pes active           : 2992
+  mpi tasks per node         : 128
+  pe count for cost estimate : 3072
+
+  Overall Metrics:
+    Model Cost:           71646.22   pe-hrs/simulated_year
+    Model Throughput:         1.03   simulated_years/day
+
+    Init Time   :     172.589 seconds
+    Run Time    :    6900.855 seconds      230.029 seconds/day
+    Final Time  :      32.253 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    6900.855 seconds      230.029 seconds/mday         1.03 myears/wday
+    CPL Run Time:     196.939 seconds        6.565 seconds/mday        36.06 myears/wday
+    ATM Run Time:    6347.788 seconds      211.593 seconds/mday         1.12 myears/wday
+    LND Run Time:     371.175 seconds       12.373 seconds/mday        19.13 myears/wday
+    ICE Run Time:      85.325 seconds        2.844 seconds/mday        83.23 myears/wday
+    OCN Run Time:       1.480 seconds        0.049 seconds/mday      4797.90 myears/wday
+    ROF Run Time:       5.245 seconds        0.175 seconds/mday      1353.85 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   8064.013 seconds      268.800 seconds/mday         0.88 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 127)
+                                                ATM (pes 0 to 2559)
+                                                LND (pes 0 to 575)
+                                                                                  ICE (pes 2560 to 2815)
+                                                                                     OCN (pes 2816 to 2911)
+                                                ROF (pes 0 to 127)
+                                                                                       GLC (pes 2912 to 2959)
+                                                                                       WAV (pes 2960 to 2983)
+                                                                                       ESP (pes 2984 to 2991)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6143089.251213-111614
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sat Dec 13 12:51:08 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        128         0        128    x 1       1      (1     )
+  atm = cam        3456        0        3456   x 1       1      (1     )
+  lnd = clm        768         0        768    x 1       1      (1     )
+  ice = cice       320         3456     320    x 1       1      (1     )
+  ocn = docn       128         3776     128    x 1       1      (1     )
+  rof = mosart     192         0        192    x 1       1      (1     )
+  glc = sglc       64          3904     64     x 1       1      (1     )
+  wav = swav       32          3968     32     x 1       1      (1     )
+  esp = sesp       8           4000     8      x 1       1      (1     )
+
+  total pes active           : 4008
+  mpi tasks per node         : 128
+  pe count for cost estimate : 4096
+
+  Overall Metrics:
+    Model Cost:           77008.98   pe-hrs/simulated_year
+    Model Throughput:         1.28   simulated_years/day
+
+    Init Time   :     116.720 seconds
+    Run Time    :    5563.042 seconds      185.435 seconds/day
+    Final Time  :      30.999 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    5563.042 seconds      185.435 seconds/mday         1.28 myears/wday
+    CPL Run Time:     190.695 seconds        6.357 seconds/mday        37.24 myears/wday
+    ATM Run Time:    5125.111 seconds      170.837 seconds/mday         1.39 myears/wday
+    LND Run Time:     280.815 seconds        9.361 seconds/mday        25.29 myears/wday
+    ICE Run Time:      88.758 seconds        2.959 seconds/mday        80.01 myears/wday
+    OCN Run Time:       1.007 seconds        0.034 seconds/mday      7051.31 myears/wday
+    ROF Run Time:       2.800 seconds        0.093 seconds/mday      2536.20 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   7201.949 seconds      240.065 seconds/mday         0.99 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 127)
+                                                ATM (pes 0 to 3455)
+                                                LND (pes 0 to 767)
+                                                                                  ICE (pes 3456 to 3775)
+                                                                                     OCN (pes 3776 to 3903)
+                                                ROF (pes 0 to 191)
+                                                                                       GLC (pes 3904 to 3967)
+                                                                                       WAV (pes 3968 to 3999)
+                                                                                       ESP (pes 4000 to 4007)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6143527.251213-143515
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sat Dec 13 16:01:17 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        192         0        192    x 1       1      (1     )
+  atm = cam        5120        0        5120   x 1       1      (1     )
+  lnd = clm        1152        0        1152   x 1       1      (1     )
+  ice = cice       480         5120     480    x 1       1      (1     )
+  ocn = docn       192         5600     192    x 1       1      (1     )
+  rof = mosart     288         0        288    x 1       1      (1     )
+  glc = sglc       96          5792     96     x 1       1      (1     )
+  wav = swav       48          5888     48     x 1       1      (1     )
+  esp = sesp       8           5936     8      x 1       1      (1     )
+
+  total pes active           : 5944
+  mpi tasks per node         : 128
+  pe count for cost estimate : 6016
+
+  Overall Metrics:
+    Model Cost:          101980.17   pe-hrs/simulated_year
+    Model Throughput:         1.42   simulated_years/day
+
+    Init Time   :     131.484 seconds
+    Run Time    :    5015.784 seconds      167.193 seconds/day
+    Final Time  :      32.242 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    5015.784 seconds      167.193 seconds/mday         1.42 myears/wday
+    CPL Run Time:     147.484 seconds        4.916 seconds/mday        48.15 myears/wday
+    ATM Run Time:    4689.435 seconds      156.314 seconds/mday         1.51 myears/wday
+    LND Run Time:     194.815 seconds        6.494 seconds/mday        36.45 myears/wday
+    ICE Run Time:      65.311 seconds        2.177 seconds/mday       108.73 myears/wday
+    OCN Run Time:       0.986 seconds        0.033 seconds/mday      7200.74 myears/wday
+    ROF Run Time:       1.926 seconds        0.064 seconds/mday      3687.49 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   6373.688 seconds      212.456 seconds/mday         1.11 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 191)
+                                                ATM (pes 0 to 5119)
+                                                LND (pes 0 to 1151)
+                                                                                  ICE (pes 5120 to 5599)
+                                                                                     OCN (pes 5600 to 5791)
+                                                ROF (pes 0 to 287)
+                                                                                       GLC (pes 5792 to 5887)
+                                                                                       WAV (pes 5888 to 5935)
+                                                                                       ESP (pes 5936 to 5943)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6143714.251213-164555
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sat Dec 13 18:17:29 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        192         0        192    x 1       1      (1     )
+  atm = cam        5120        0        5120   x 1       1      (1     )
+  lnd = clm        1152        0        1152   x 1       1      (1     )
+  ice = cice       480         5120     480    x 1       1      (1     )
+  ocn = docn       192         5600     192    x 1       1      (1     )
+  rof = mosart     288         0        288    x 1       1      (1     )
+  glc = sglc       96          5792     96     x 1       1      (1     )
+  wav = swav       48          5888     48     x 1       1      (1     )
+  esp = sesp       8           5936     8      x 1       1      (1     )
+
+  total pes active           : 5944
+  mpi tasks per node         : 128
+  pe count for cost estimate : 6016
+
+  Overall Metrics:
+    Model Cost:          105886.55   pe-hrs/simulated_year
+    Model Throughput:         1.36   simulated_years/day
+
+    Init Time   :     270.807 seconds
+    Run Time    :    5207.915 seconds      173.597 seconds/day
+    Final Time  :     127.132 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    5207.915 seconds      173.597 seconds/mday         1.36 myears/wday
+    CPL Run Time:     152.345 seconds        5.078 seconds/mday        46.61 myears/wday
+    ATM Run Time:    4777.754 seconds      159.258 seconds/mday         1.49 myears/wday
+    LND Run Time:     293.858 seconds        9.795 seconds/mday        24.17 myears/wday
+    ICE Run Time:      66.540 seconds        2.218 seconds/mday       106.72 myears/wday
+    OCN Run Time:       1.074 seconds        0.036 seconds/mday      6612.08 myears/wday
+    ROF Run Time:       2.064 seconds        0.069 seconds/mday      3440.75 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   6322.882 seconds      210.763 seconds/mday         1.12 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 191)
+                                                ATM (pes 0 to 5119)
+                                                LND (pes 0 to 1151)
+                                                                                  ICE (pes 5120 to 5599)
+                                                                                     OCN (pes 5600 to 5791)
+                                                ROF (pes 0 to 287)
+                                                                                       GLC (pes 5792 to 5887)
+                                                                                       WAV (pes 5888 to 5935)
+                                                                                       ESP (pes 5936 to 5943)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6144037.251213-204125
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sat Dec 13 22:14:52 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        256         0        256    x 1       1      (1     )
+  atm = cam        6912        0        6912   x 1       1      (1     )
+  lnd = clm        1536        0        1536   x 1       1      (1     )
+  ice = cice       640         6912     640    x 1       1      (1     )
+  ocn = docn       256         7552     256    x 1       1      (1     )
+  rof = mosart     384         0        384    x 1       1      (1     )
+  glc = sglc       128         7808     128    x 1       1      (1     )
+  wav = swav       64          7936     64     x 1       1      (1     )
+  esp = sesp       8           8000     8      x 1       1      (1     )
+
+  total pes active           : 8008
+  mpi tasks per node         : 128
+  pe count for cost estimate : 8064
+
+  Overall Metrics:
+    Model Cost:          148410.44   pe-hrs/simulated_year
+    Model Throughput:         1.30   simulated_years/day
+
+    Init Time   :     144.321 seconds
+    Run Time    :    5445.588 seconds      181.520 seconds/day
+    Final Time  :      33.516 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    5445.588 seconds      181.520 seconds/mday         1.30 myears/wday
+    CPL Run Time:     140.957 seconds        4.699 seconds/mday        50.38 myears/wday
+    ATM Run Time:    5151.339 seconds      171.711 seconds/mday         1.38 myears/wday
+    LND Run Time:     161.697 seconds        5.390 seconds/mday        43.92 myears/wday
+    ICE Run Time:      48.375 seconds        1.613 seconds/mday       146.80 myears/wday
+    OCN Run Time:       1.004 seconds        0.033 seconds/mday      7071.67 myears/wday
+    ROF Run Time:      16.068 seconds        0.536 seconds/mday       441.95 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   6832.928 seconds      227.764 seconds/mday         1.04 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 255)
+                                                ATM (pes 0 to 6911)
+                                                LND (pes 0 to 1535)
+                                                                                  ICE (pes 6912 to 7551)
+                                                                                     OCN (pes 7552 to 7807)
+                                                ROF (pes 0 to 383)
+                                                                                       GLC (pes 7808 to 7935)
+                                                                                       WAV (pes 7936 to 7999)
+                                                                                       ESP (pes 8000 to 8007)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6144443.251214-004059
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sun Dec 14 02:20:02 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        128         0        128    x 1       1      (1     )
+  atm = cam        6912        0        6912   x 1       1      (1     )
+  lnd = clm        1536        0        1536   x 1       1      (1     )
+  ice = cice       640         6912     640    x 1       1      (1     )
+  ocn = docn       256         7552     256    x 1       1      (1     )
+  rof = mosart     384         0        384    x 1       1      (1     )
+  glc = sglc       128         7808     128    x 1       1      (1     )
+  wav = swav       64          7936     64     x 1       1      (1     )
+  esp = sesp       8           8000     8      x 1       1      (1     )
+
+  total pes active           : 8008
+  mpi tasks per node         : 128
+  pe count for cost estimate : 8064
+
+  Overall Metrics:
+    Model Cost:          157692.13   pe-hrs/simulated_year
+    Model Throughput:         1.23   simulated_years/day
+
+    Init Time   :     139.593 seconds
+    Run Time    :    5786.159 seconds      192.872 seconds/day
+    Final Time  :      38.540 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    5786.159 seconds      192.872 seconds/mday         1.23 myears/wday
+    CPL Run Time:     152.263 seconds        5.075 seconds/mday        46.64 myears/wday
+    ATM Run Time:    5411.425 seconds      180.381 seconds/mday         1.31 myears/wday
+    LND Run Time:     161.440 seconds        5.381 seconds/mday        43.99 myears/wday
+    ICE Run Time:      55.663 seconds        1.855 seconds/mday       127.58 myears/wday
+    OCN Run Time:       1.041 seconds        0.035 seconds/mday      6820.37 myears/wday
+    ROF Run Time:      38.395 seconds        1.280 seconds/mday       184.96 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   8917.131 seconds      297.238 seconds/mday         0.80 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 127)
+                                                ATM (pes 0 to 6911)
+                                                LND (pes 0 to 1535)
+                                                                                  ICE (pes 6912 to 7551)
+                                                                                     OCN (pes 7552 to 7807)
+                                                ROF (pes 0 to 383)
+                                                                                       GLC (pes 7808 to 7935)
+                                                                                       WAV (pes 7936 to 7999)
+                                                                                       ESP (pes 8000 to 8007)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6145397.251214-114343
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sun Dec 14 13:15:15 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        288         0        288    x 1       1      (1     )
+  atm = cam        7680        0        7680   x 1       1      (1     )
+  lnd = clm        1728        0        1728   x 1       1      (1     )
+  ice = cice       720         7680     720    x 1       1      (1     )
+  ocn = docn       288         8400     288    x 1       1      (1     )
+  rof = mosart     432         0        432    x 1       1      (1     )
+  glc = sglc       144         8688     144    x 1       1      (1     )
+  wav = swav       72          8832     72     x 1       1      (1     )
+  esp = sesp       8           8904     8      x 1       1      (1     )
+
+  total pes active           : 8912
+  mpi tasks per node         : 128
+  pe count for cost estimate : 8960
+
+  Overall Metrics:
+    Model Cost:          161605.20   pe-hrs/simulated_year
+    Model Throughput:         1.33   simulated_years/day
+
+    Init Time   :     139.679 seconds
+    Run Time    :    5336.767 seconds      177.892 seconds/day
+    Final Time  :      34.100 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    5336.767 seconds      177.892 seconds/mday         1.33 myears/wday
+    CPL Run Time:     136.920 seconds        4.564 seconds/mday        51.86 myears/wday
+    ATM Run Time:    5090.325 seconds      169.677 seconds/mday         1.40 myears/wday
+    LND Run Time:     147.855 seconds        4.928 seconds/mday        48.03 myears/wday
+    ICE Run Time:      47.516 seconds        1.584 seconds/mday       149.45 myears/wday
+    OCN Run Time:       1.022 seconds        0.034 seconds/mday      6945.11 myears/wday
+    ROF Run Time:       1.759 seconds        0.059 seconds/mday      4037.85 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   6696.358 seconds      223.212 seconds/mday         1.06 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 287)
+                                                ATM (pes 0 to 7679)
+                                                LND (pes 0 to 1727)
+                                                                                  ICE (pes 7680 to 8399)
+                                                                                     OCN (pes 8400 to 8687)
+                                                ROF (pes 0 to 431)
+                                                                                       GLC (pes 8688 to 8831)
+                                                                                       WAV (pes 8832 to 8903)
+                                                                                       ESP (pes 8904 to 8911)
+
+---------------- TIMING PROFILE ---------------------
+  Case        : TESTKENYA_ne60x02_climo_18node
+  LID         : 6145782.251214-145630
+  Machine     : eiger
+  Caseroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node
+  Timeroot    : /users/jgpel/cases/TESTKENYA_ne60x02_climo_18node/Tools
+  User        : jgpel
+  Curr Date   : Sun Dec 14 16:20:44 2025
+  Driver      : CMEPS
+  grid        : a%ne0np4.TESTKENYA.ne60x02_l%ne0np4.TESTKENYA.ne60x02_oi%ne0np4.TESTKENYA.ne60x02_r%r05_g%null_w%null_z%null_m%tx0.1v2
+  compset     : 2000_CAM60_CLM50%SP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV_SESP
+  run type    : startup, continue_run = FALSE (inittype = TRUE)
+  stop option : ndays, stop_n = 30
+  run length  : 30 days (29.993055555555557 for ocean)
+
+  component       comp_pes    root_pe   tasks  x threads instances (stride)
+  ---------        ------     -------   ------   ------  ---------  ------
+  cpl = cpl        192         0        192    x 1       1      (1     )
+  atm = cam        4320        0        4320   x 1       1      (1     )
+  lnd = clm        960         0        960    x 1       1      (1     )
+  ice = cice       400         4320     400    x 1       1      (1     )
+  ocn = docn       160         4720     160    x 1       1      (1     )
+  rof = mosart     240         0        240    x 1       1      (1     )
+  glc = sglc       80          4880     80     x 1       1      (1     )
+  wav = swav       40          4960     40     x 1       1      (1     )
+  esp = sesp       8           5000     8      x 1       1      (1     )
+
+  total pes active           : 5008
+  mpi tasks per node         : 128
+  pe count for cost estimate : 5120
+
+  Overall Metrics:
+    Model Cost:           83700.33   pe-hrs/simulated_year
+    Model Throughput:         1.47   simulated_years/day
+
+    Init Time   :     202.561 seconds
+    Run Time    :    4837.134 seconds      161.238 seconds/day
+    Final Time  :      32.796 seconds
+
+
+Runs Time in total seconds, seconds/model-day, and model-years/wall-day
+CPL Run Time represents time in CPL pes alone, not including time associated with data exchange with other components
+
+    TOT Run Time:    4837.134 seconds      161.238 seconds/mday         1.47 myears/wday
+    CPL Run Time:     160.194 seconds        5.340 seconds/mday        44.33 myears/wday
+    ATM Run Time:    4470.880 seconds      149.029 seconds/mday         1.59 myears/wday
+    LND Run Time:     228.654 seconds        7.622 seconds/mday        31.06 myears/wday
+    ICE Run Time:      73.964 seconds        2.465 seconds/mday        96.01 myears/wday
+    OCN Run Time:       0.968 seconds        0.032 seconds/mday      7333.85 myears/wday
+    ROF Run Time:       2.515 seconds        0.084 seconds/mday      2824.06 myears/wday
+    GLC Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    WAV Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    ESP Run Time:       0.000 seconds        0.000 seconds/mday         0.00 myears/wday
+    CPL COMM Time:   5791.141 seconds      193.038 seconds/mday         1.23 myears/wday
+   NOTE: min:max driver timers (seconds/day):
+                            CPL (pes 0 to 191)
+                                                ATM (pes 0 to 4319)
+                                                LND (pes 0 to 959)
+                                                                                  ICE (pes 4320 to 4719)
+                                                                                     OCN (pes 4720 to 4879)
+                                                ROF (pes 0 to 239)
+                                                                                       GLC (pes 4880 to 4959)
+                                                                                       WAV (pes 4960 to 4999)
+                                                                                       ESP (pes 5000 to 5007)
+
