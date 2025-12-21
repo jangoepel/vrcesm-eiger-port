@@ -355,12 +355,6 @@ The VR-CESM configuration concentrates computational resources on the region of 
 - **NetCDF:** 4.9.0 with PnetCDF 1.12.3
 - **Build System:** CMake 3.24, CIME framework
 
-**Resource Allocation:**
-- **Project ID:** [Wyss Academy allocation]
-- **Queue:** Normal (production), Debug (testing)
-- **Node Access:** 8-70 nodes per job
-- **Walltime:** 24 hours
-
 ---
 
 ## Tools & Technologies
