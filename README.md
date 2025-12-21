@@ -11,9 +11,9 @@ This repository documents the complete technical work of porting, optimizing, an
 **Objective:** Port Kenya-focused VR-CESM simulations from NCAR's Derecho to CSCS Eiger.Alps infrastructure, enabling high-resolution climate modeling for East African land-atmosphere feedback studies.
 
 **System Details:**
-- **Source System:** NCAR Derecho (CESM3 beta02)
-- **Target System:** CSCS Eiger.Alps (AMD Milan CPUs)
-- **Model:** CESM3 beta06 with CAM6, CLM5, coupled components
+- **Source System:** NCAR Derecho
+- **Target System:** CSCS Eiger.Alps
+- **Model:** CESM3_beta02 with CAM6, CLM5, coupled components
 - **Grids Tested:** 
   - 1° global resolution (ne30x03, 85k columns, 0.125° over Kenya)
   - 0.5° global resolution (ne60x02, 220k columns, 0.125° over Kenya)
@@ -359,14 +359,14 @@ The VR-CESM configuration concentrates computational resources on the region of 
 - **Project ID:** [Wyss Academy allocation]
 - **Queue:** Normal (production), Debug (testing)
 - **Node Access:** 8-70 nodes per job
-- **Walltime:** 24 hours typical, 48 hours for long runs
+- **Walltime:** 24 hours
 
 ---
 
 ## Tools & Technologies
 
 **Climate Model:**
-- CESM3 (beta06) - Community Earth System Model
+- CESM3 (beta02) - Community Earth System Model
 - CAM6 - Community Atmosphere Model
 - CLM5 - Community Land Model  
 - CMEPS - Community Mediator for Earth Prediction Systems
